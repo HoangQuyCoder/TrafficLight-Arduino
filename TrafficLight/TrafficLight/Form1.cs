@@ -14,8 +14,7 @@ namespace TrafficLight
     public partial class Form1 : Form
     {
         private SerialPort _serialPort;
-        byte colorLed2 = 0;
-        byte colorLed1 = 0;
+        byte flag = 0;
 
         public Form1()
         {
@@ -35,6 +34,9 @@ namespace TrafficLight
             _serialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
             _serialPort.Open();
         }
+
+        byte colorLed2 = 0;
+        byte colorLed1 = 0;
 
         private void DisplayData(string data)
         {
@@ -66,6 +68,8 @@ namespace TrafficLight
             // Phân tích và hiển thị dữ liệu trên hai TextBox
             Invoke(new Action(() => DisplayData(data)));
             Invoke(new Action(() => ProcessSerialData(data)));
+            Invoke(new Action(() => ProcessSerialDataTime(data)));
+
         }
 
         private void ProcessSerialData(string data)
@@ -91,6 +95,26 @@ namespace TrafficLight
                 }
             }
         }
+        private void ProcessSerialDataTime(string data)
+        {
+            string[] parts = data.Split(';');
+            foreach (string part in parts)
+            {
+                if (part.Contains("Hour"))
+                {
+                    string[] time = part.Split(':');
+
+                    currentHour.Text = time[1].Trim();
+                }
+
+                if (part.Contains("Minute"))
+                {
+                    string[] time = part.Split(':');
+
+                    currentMinute.Text = time[1].Trim();
+                }
+            }
+        }
         private void btn_stop_light_Click(object sender, EventArgs e)
         {
             try
@@ -101,9 +125,8 @@ namespace TrafficLight
                 _serialPort.Write(data, 0, data.Length);
 
                 selectedMode_0.Checked = false;
-                selectedMode_1.Checked = false;
-                selectedMode_2.Checked = true;
-                selectedMode_3.Checked = false;
+                selectedMode_1.Checked = true;
+                selectedMode_2.Checked = false;
 
                 MessageBox.Show("Timing values and colors sent successfully.");
             }
@@ -117,18 +140,20 @@ namespace TrafficLight
             try
             {
                 byte mode = 2; // Chế độ Night mode
-                colorLed1 = 1;
-                colorLed2 = 1;
-                byte[] data = new byte[] { mode, colorLed1, colorLed2 };
+
+                byte targetHour = byte.Parse(inputHour.Text);
+                byte targetMinute = byte.Parse(inputMinute.Text);
+                byte targetHourStop = byte.Parse(inputHourStop.Text);
+                byte targetMinuteStop = byte.Parse(inputMinuteStop.Text);
+
+                byte[] data = new byte[] { mode, targetHour, targetMinute, targetHourStop, targetMinuteStop };
 
                 // Gửi dữ liệu qua cổng nối tiếp
                 _serialPort.Write(data, 0, data.Length);
 
-
                 selectedMode_0.Checked = false;
                 selectedMode_1.Checked = false;
-                selectedMode_2.Checked = false;
-                selectedMode_3.Checked = true;
+                selectedMode_2.Checked = true;
 
                 MessageBox.Show("Night mode with yellow lights sent successfully.");
             }
@@ -138,54 +163,20 @@ namespace TrafficLight
             }
         }
 
-        private void btn_green_led1_Click(object sender, EventArgs e)
+        private void btn_green_light_Click(object sender, EventArgs e)
         {
             try
             {
-                byte tDen1 = byte.Parse(txtTden1_green.Text);
-                byte tDen2 = byte.Parse(txtTden1_red.Text);
-
+                byte tDen1 = byte.Parse(txtTden1.Text);
+                byte tDen2 = byte.Parse(txtTden2.Text);
                 byte mode = 0;
-                byte flag = 0;
 
                 byte[] data = new byte[] { mode, flag, tDen1, tDen2 };
-                //MessageBox.Show(data[1].GetType().ToString() + data[2].GetType().ToString() + data.Length);
-
                 _serialPort.Write(data, 0, data.Length);
 
                 selectedMode_0.Checked = true;
                 selectedMode_1.Checked = false;
                 selectedMode_2.Checked = false;
-                selectedMode_3.Checked = false;
-
-                MessageBox.Show("Timing values sent successfully.");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
-        }
-
-        private void btn_green_led2_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                byte tDen1 = byte.Parse(txtTden2.Text);
-                byte tDen2 = byte.Parse(txtTden2_red.Text);
-
-                byte mode = 0;
-                byte flag = 1;
-
-                byte[] data = new byte[] { mode, flag, tDen1, tDen2 };
-                //MessageBox.Show(data[1].GetType().ToString() + data[2].GetType().ToString() + data.Length);
-
-                _serialPort.Write(data, 0, data.Length);
-
-                selectedMode_0.Checked = false;
-                selectedMode_1.Checked = true;
-                selectedMode_2.Checked = false;
-                selectedMode_3.Checked = false;
-
 
                 MessageBox.Show("Timing values sent successfully.");
             }
@@ -224,6 +215,15 @@ namespace TrafficLight
         {
             colorLed2 = 2;
         }
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            flag = 0;
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            flag = 1;
+        }
 
         private void reset_Button_Click(object sender, EventArgs e)
         {
@@ -235,11 +235,9 @@ namespace TrafficLight
                 byte flag = 0;
 
                 byte[] data = new byte[] { mode, flag, tDen1, tDen2 };
-                //MessageBox.Show(data[1].GetType().ToString() + data[2].GetType().ToString() + data.Length);
-
                 _serialPort.Write(data, 0, data.Length);
 
-                MessageBox.Show("Reset sent successfully.");
+                MessageBox.Show("Timing values sent successfully.");
             }
             catch (Exception ex)
             {

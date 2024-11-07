@@ -1,5 +1,6 @@
 #include "TrafficLight.h"
 #include "Arduino.h"
+#include <RTClib.h>
 
 // Set traffic light pins as OUTPUT
 TrafficLight::TrafficLight(int pinXanh, int pinDo, int pinVang) {
@@ -11,16 +12,28 @@ TrafficLight::TrafficLight(int pinXanh, int pinDo, int pinVang) {
   this->_pinVang = pinVang;
 }
 
-void TrafficLight::toggleYellowLights() {
-  digitalWrite(_pinVang, HIGH);  // Turn on yellow light
-  digitalWrite(_pinXanh, LOW);
-  digitalWrite(_pinDo, LOW);
+void TrafficLight::toggleYellowLights(int targetHour, int targetMinute, RTC_DS1307& rtc) {
+  DateTime now = rtc.now();  // Get the current time
+  int currentHour = now.hour();
+  int currentMinute = now.minute();
+  Serial.print("Hour: ");
+  Serial.print(currentHour);
+  Serial.print("; Minute: ");
+  Serial.println(currentMinute);
 
-  delay(500);
 
-  digitalWrite(_pinVang, LOW);  // Turn off yellow light
-  digitalWrite(_pinXanh, LOW);
-  digitalWrite(_pinDo, LOW);
+  if (currentHour == targetHour && currentMinute == targetMinute) {
+
+    digitalWrite(_pinVang, HIGH);  // Turn on yellow light
+    digitalWrite(_pinXanh, LOW);
+    digitalWrite(_pinDo, LOW);
+
+    delay(500);
+
+    digitalWrite(_pinVang, LOW);  // Turn off yellow light
+    digitalWrite(_pinXanh, LOW);
+    digitalWrite(_pinDo, LOW);
+  }
 }
 
 void TrafficLight::setColor(byte color) {

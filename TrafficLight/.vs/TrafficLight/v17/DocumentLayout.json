@@ -22,36 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.cs",
-              "RelativeDocumentMoniker": "TrafficLight\\Form1.cs",
-              "ToolTip": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.cs",
-              "RelativeToolTip": "TrafficLight\\Form1.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAmwC4AAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T05:40:58.165Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "TrafficLight\\Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.Designer.cs",
-              "RelativeToolTip": "TrafficLight\\Form1.Designer.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAswE8AAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T08:27:40.691Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -70,6 +42,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.cs",
+              "RelativeDocumentMoniker": "TrafficLight\\Form1.cs",
+              "ToolTip": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.cs",
+              "RelativeToolTip": "TrafficLight\\Form1.cs",
+              "ViewState": "AQIAAIgAAAAAAAAAAADwv5oAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T05:40:58.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.cs",
@@ -79,6 +64,19 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T05:40:47.919Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "TrafficLight\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.Designer.cs",
+              "RelativeToolTip": "TrafficLight\\Form1.Designer.cs",
+              "ViewState": "AQIAAHQCAAAAAAAAAAAWwNoCAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T08:27:40.691Z",
+              "EditorCaption": ""
             }
           ]
         }

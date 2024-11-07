@@ -22,8 +22,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.cs",
+              "RelativeDocumentMoniker": "TrafficLight\\Form1.cs",
+              "ToolTip": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.cs",
+              "RelativeToolTip": "TrafficLight\\Form1.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAswHMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T05:40:58.165Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -42,30 +56,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.cs",
-              "RelativeDocumentMoniker": "TrafficLight\\Form1.cs",
-              "ToolTip": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.cs",
-              "RelativeToolTip": "TrafficLight\\Form1.cs",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAIwLIAAABrAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T05:40:58.165Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "TrafficLight\\Form1.Designer.cs",
               "ToolTip": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.Designer.cs",
               "RelativeToolTip": "TrafficLight\\Form1.Designer.cs",
-              "ViewState": "AgIAADMBAAAAAAAAAAAwwEcBAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAMwBAAAAAAAAAAAswM4BAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T08:27:40.691Z",
-              "IsPinned": true,
               "EditorCaption": ""
             },
             {

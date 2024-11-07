@@ -1,7 +1,8 @@
 #include <TimerOne.h>
 #include "GiaoLo.h"
-#include "Led.h"
+#include "Led7Seg.h"
 #include "TrafficLight.h"
+#include <RTClib.h>
 
 #define x1 8
 #define v1 9
@@ -14,6 +15,12 @@
 #define RCLK 4  // Latch Clock Pin
 #define DIO 3   // Data Input Pin
 
+RTC_DS1307 rtc;  // Create an RTC instance
+int targetHour;
+int targetMinute;
+int targetHourStop;
+int targetMinuteStop;
+
 bool stopMode = false;
 bool yellowFlashing = false;
 
@@ -24,18 +31,35 @@ byte t_vang = 3;
 byte t_xanh = 14;
 byte t_do = 22;
 
-GiaoLo giaoLo(SCLK, RCLK, DIO);
-Led ledOne(t_xanh, t_do, t_vang);
-Led ledTwo(t_xanh, t_do, t_vang);
+Led7Seg ledOne(0, 1, 2, 3, 4, 5, 6, 7);
+Led7Seg ledThree(8, 9, 10, 11, 12, 13, 14, 15);
+Led7Seg ledTwo(16, 17, 18, 19, 20, 21, 22, 23);
+Led7Seg ledFour(24, 25, 26, 27, 28, 29, 30, 31);
+GiaoLo giaoLo(SCLK, RCLK, DIO, ledOne, ledTwo, ledThree, ledFour);
 TrafficLight trafficLightOne(x1, d1, v1);
 TrafficLight trafficLightTwo(x2, d2, v2);
 
 void setup() {
   Serial.begin(9600);
 
+  ledOne.set(t_xanh, t_do, t_vang);
+  ledThree.set(t_xanh, t_do, t_vang);
+  ledTwo.calculator(ledOne);
+  ledFour.calculator(ledThree);
+
   // Initialize TimerOne to call updateTimers every 1 second
   Timer1.initialize(1000000);            // 1,000,000 microseconds = 1 second
   Timer1.attachInterrupt(updateTimers);  // Attach the timer interrupt
+
+  if (!rtc.begin()) {
+    Serial.println("Couldn't find RTC");
+    while (1)
+      ;  // Stop if the RTC is not found
+  }
+
+  if (!rtc.isrunning()) {
+    Serial.println("RTC is NOT running!");
+  }
 }
 
 // Mode: 0.Light mode  1.Stop mode   2.Night mode
@@ -82,8 +106,10 @@ void loop() {
       resetTimers();
 
     } else if (mode == 2) {
-      byte colorLed1 = Serial.read();
-      byte colorLed2 = Serial.read();
+      targetHour = Serial.read();
+      targetMinute = Serial.read();
+      targetHourStop = Serial.read();
+      targetMinuteStop = Serial.read();
 
       yellowFlashing = true;
       stopMode = false;
@@ -99,8 +125,8 @@ void loop() {
 
   // Traffic light control logic based on current time `t`
   if (yellowFlashing) {
-    trafficLightOne.toggleYellowLights();
-    trafficLightTwo.toggleYellowLights();
+    trafficLightOne.toggleYellowLights(targetHour, targetMinute, rtc);
+    trafficLightTwo.toggleYellowLights(targetHour, targetMinute, rtc);
     return;
   }
 

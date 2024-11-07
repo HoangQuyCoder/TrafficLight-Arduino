@@ -44,7 +44,7 @@
             this.name_led1_1 = new System.Windows.Forms.TextBox();
             this.name_led2_1 = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.selectedMode_2 = new System.Windows.Forms.RadioButton();
+            this.selectedMode_1 = new System.Windows.Forms.RadioButton();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.red_light_led2 = new System.Windows.Forms.RadioButton();
@@ -58,36 +58,40 @@
             this.label9 = new System.Windows.Forms.Label();
             this.btn_stop_light = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.selectedMode_3 = new System.Windows.Forms.RadioButton();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.btn_night_mode = new System.Windows.Forms.Button();
-            this.txtTden1_green = new System.Windows.Forms.TextBox();
-            this.txtTden2 = new System.Windows.Forms.TextBox();
-            this.btn_green_led1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.selectedMode_0 = new System.Windows.Forms.RadioButton();
+            this.currentMinute = new System.Windows.Forms.TextBox();
+            this.currentHour = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.txtTden1_red = new System.Windows.Forms.TextBox();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.selectedMode_1 = new System.Windows.Forms.RadioButton();
-            this.txtTden2_green = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtTden2_red = new System.Windows.Forms.TextBox();
-            this.btn_green_led2 = new System.Windows.Forms.Button();
+            this.inputMinute = new System.Windows.Forms.TextBox();
+            this.inputHour = new System.Windows.Forms.TextBox();
+            this.selectedMode_2 = new System.Windows.Forms.RadioButton();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btn_night_mode = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btn_green_light = new System.Windows.Forms.Button();
+            this.txtTden2 = new System.Windows.Forms.TextBox();
+            this.txtTden1 = new System.Windows.Forms.TextBox();
+            this.selectedMode_0 = new System.Windows.Forms.RadioButton();
             this.reset_Button = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.inputMinuteStop = new System.Windows.Forms.TextBox();
+            this.inputHourStop = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox8.SuspendLayout();
             this.SuspendLayout();
             // 
             // label3
@@ -233,7 +237,7 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.selectedMode_2);
+            this.groupBox5.Controls.Add(this.selectedMode_1);
             this.groupBox5.Controls.Add(this.label10);
             this.groupBox5.Controls.Add(this.groupBox6);
             this.groupBox5.Controls.Add(this.groupBox7);
@@ -248,19 +252,19 @@
             this.groupBox5.TabIndex = 24;
             this.groupBox5.TabStop = false;
             // 
-            // selectedMode_2
+            // selectedMode_1
             // 
-            this.selectedMode_2.AutoSize = true;
-            this.selectedMode_2.Enabled = false;
-            this.selectedMode_2.Location = new System.Drawing.Point(7, 0);
-            this.selectedMode_2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.selectedMode_2.Name = "selectedMode_2";
-            this.selectedMode_2.Size = new System.Drawing.Size(97, 24);
-            this.selectedMode_2.TabIndex = 29;
-            this.selectedMode_2.TabStop = true;
-            this.selectedMode_2.Tag = "selected";
-            this.selectedMode_2.Text = "Selected";
-            this.selectedMode_2.UseVisualStyleBackColor = true;
+            this.selectedMode_1.AutoSize = true;
+            this.selectedMode_1.Enabled = false;
+            this.selectedMode_1.Location = new System.Drawing.Point(7, 0);
+            this.selectedMode_1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.selectedMode_1.Name = "selectedMode_1";
+            this.selectedMode_1.Size = new System.Drawing.Size(97, 24);
+            this.selectedMode_1.TabIndex = 29;
+            this.selectedMode_1.TabStop = true;
+            this.selectedMode_1.Tag = "selected";
+            this.selectedMode_1.Text = "Selected";
+            this.selectedMode_1.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
@@ -411,10 +415,22 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label18);
+            this.groupBox3.Controls.Add(this.label19);
+            this.groupBox3.Controls.Add(this.label20);
+            this.groupBox3.Controls.Add(this.inputMinuteStop);
+            this.groupBox3.Controls.Add(this.inputHourStop);
+            this.groupBox3.Controls.Add(this.label17);
             this.groupBox3.Controls.Add(this.label16);
-            this.groupBox3.Controls.Add(this.textBox5);
-            this.groupBox3.Controls.Add(this.selectedMode_3);
             this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.currentMinute);
+            this.groupBox3.Controls.Add(this.currentHour);
+            this.groupBox3.Controls.Add(this.label15);
+            this.groupBox3.Controls.Add(this.label14);
+            this.groupBox3.Controls.Add(this.label13);
+            this.groupBox3.Controls.Add(this.inputMinute);
+            this.groupBox3.Controls.Add(this.inputHour);
+            this.groupBox3.Controls.Add(this.selectedMode_2);
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.btn_night_mode);
             this.groupBox3.Location = new System.Drawing.Point(503, 449);
@@ -425,27 +441,108 @@
             this.groupBox3.TabIndex = 25;
             this.groupBox3.TabStop = false;
             // 
-            // selectedMode_3
+            // label17
             // 
-            this.selectedMode_3.AutoSize = true;
-            this.selectedMode_3.Enabled = false;
-            this.selectedMode_3.Location = new System.Drawing.Point(7, 0);
-            this.selectedMode_3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.selectedMode_3.Name = "selectedMode_3";
-            this.selectedMode_3.Size = new System.Drawing.Size(97, 24);
-            this.selectedMode_3.TabIndex = 29;
-            this.selectedMode_3.TabStop = true;
-            this.selectedMode_3.Text = "Selected";
-            this.selectedMode_3.UseVisualStyleBackColor = true;
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(205, 220);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(61, 20);
+            this.label17.TabIndex = 43;
+            this.label17.Text = "Minute:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(57, 220);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(48, 20);
+            this.label16.TabIndex = 42;
+            this.label16.Text = "Hour:";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(76, 85);
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(57, 190);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(271, 20);
-            this.label12.TabIndex = 33;
-            this.label12.Text = "Đèn vàng sẽ nhấp nháy vào ban đêm";
+            this.label12.Size = new System.Drawing.Size(113, 22);
+            this.label12.TabIndex = 41;
+            this.label12.Text = "Current time:";
+            // 
+            // currentMinute
+            // 
+            this.currentMinute.Enabled = false;
+            this.currentMinute.Location = new System.Drawing.Point(266, 216);
+            this.currentMinute.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.currentMinute.Name = "currentMinute";
+            this.currentMinute.Size = new System.Drawing.Size(65, 26);
+            this.currentMinute.TabIndex = 40;
+            // 
+            // currentHour
+            // 
+            this.currentHour.Enabled = false;
+            this.currentHour.Location = new System.Drawing.Point(108, 216);
+            this.currentHour.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.currentHour.Name = "currentHour";
+            this.currentHour.Size = new System.Drawing.Size(65, 26);
+            this.currentHour.TabIndex = 39;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(205, 95);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(61, 20);
+            this.label15.TabIndex = 38;
+            this.label15.Text = "Minute:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(57, 95);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(48, 20);
+            this.label14.TabIndex = 37;
+            this.label14.Text = "Hour:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(57, 64);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(132, 22);
+            this.label13.TabIndex = 36;
+            this.label13.Text = "Input time start:";
+            // 
+            // inputMinute
+            // 
+            this.inputMinute.Location = new System.Drawing.Point(266, 89);
+            this.inputMinute.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.inputMinute.Name = "inputMinute";
+            this.inputMinute.Size = new System.Drawing.Size(68, 26);
+            this.inputMinute.TabIndex = 35;
+            // 
+            // inputHour
+            // 
+            this.inputHour.Location = new System.Drawing.Point(108, 91);
+            this.inputHour.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.inputHour.Name = "inputHour";
+            this.inputHour.Size = new System.Drawing.Size(65, 26);
+            this.inputHour.TabIndex = 34;
+            // 
+            // selectedMode_2
+            // 
+            this.selectedMode_2.AutoSize = true;
+            this.selectedMode_2.Enabled = false;
+            this.selectedMode_2.Location = new System.Drawing.Point(7, 0);
+            this.selectedMode_2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.selectedMode_2.Name = "selectedMode_2";
+            this.selectedMode_2.Size = new System.Drawing.Size(97, 24);
+            this.selectedMode_2.TabIndex = 29;
+            this.selectedMode_2.TabStop = true;
+            this.selectedMode_2.Text = "Selected";
+            this.selectedMode_2.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
@@ -459,7 +556,7 @@
             // 
             // btn_night_mode
             // 
-            this.btn_night_mode.Location = new System.Drawing.Point(151, 228);
+            this.btn_night_mode.Location = new System.Drawing.Point(154, 251);
             this.btn_night_mode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_night_mode.Name = "btn_night_mode";
             this.btn_night_mode.Size = new System.Drawing.Size(112, 52);
@@ -468,71 +565,98 @@
             this.btn_night_mode.UseVisualStyleBackColor = true;
             this.btn_night_mode.Click += new System.EventHandler(this.btn_night_mode_Click);
             // 
-            // txtTden1_green
+            // groupBox1
             // 
-            this.txtTden1_green.Location = new System.Drawing.Point(17, 105);
-            this.txtTden1_green.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTden1_green.Multiline = true;
-            this.txtTden1_green.Name = "txtTden1_green";
-            this.txtTden1_green.Size = new System.Drawing.Size(128, 50);
-            this.txtTden1_green.TabIndex = 0;
+            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.btn_green_light);
+            this.groupBox1.Controls.Add(this.txtTden2);
+            this.groupBox1.Controls.Add(this.txtTden1);
+            this.groupBox1.Controls.Add(this.selectedMode_0);
+            this.groupBox1.Location = new System.Drawing.Point(47, 42);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(399, 381);
+            this.groupBox1.TabIndex = 22;
+            this.groupBox1.TabStop = false;
             // 
-            // txtTden2
+            // radioButton2
             // 
-            this.txtTden2.Location = new System.Drawing.Point(11, 105);
-            this.txtTden2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTden2.Multiline = true;
-            this.txtTden2.Name = "txtTden2";
-            this.txtTden2.Size = new System.Drawing.Size(128, 50);
-            this.txtTden2.TabIndex = 1;
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(272, 202);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(74, 24);
+            this.radioButton2.TabIndex = 35;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Led 2";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
-            // btn_green_led1
+            // radioButton1
             // 
-            this.btn_green_led1.Location = new System.Drawing.Point(17, 306);
-            this.btn_green_led1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_green_led1.Name = "btn_green_led1";
-            this.btn_green_led1.Size = new System.Drawing.Size(128, 52);
-            this.btn_green_led1.TabIndex = 2;
-            this.btn_green_led1.Text = "Send";
-            this.btn_green_led1.UseVisualStyleBackColor = true;
-            this.btn_green_led1.Click += new System.EventHandler(this.btn_green_led1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(21, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 26);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Time Led 1";
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(52, 202);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(74, 24);
+            this.radioButton1.TabIndex = 34;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Led 1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 32);
+            this.label2.Location = new System.Drawing.Point(254, 48);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 26);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Time Led 2";
+            this.label2.Size = new System.Drawing.Size(100, 26);
+            this.label2.TabIndex = 33;
+            this.label2.Text = "RedTime";
             // 
-            // groupBox1
+            // label1
             // 
-            this.groupBox1.Controls.Add(this.selectedMode_0);
-            this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.txtTden1_red);
-            this.groupBox1.Controls.Add(this.btn_green_led1);
-            this.groupBox1.Controls.Add(this.txtTden1_green);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(47, 42);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Size = new System.Drawing.Size(199, 381);
-            this.groupBox1.TabIndex = 22;
-            this.groupBox1.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(32, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(120, 26);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "GreenTime";
+            // 
+            // btn_green_light
+            // 
+            this.btn_green_light.Location = new System.Drawing.Point(137, 262);
+            this.btn_green_light.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_green_light.Name = "btn_green_light";
+            this.btn_green_light.Size = new System.Drawing.Size(112, 52);
+            this.btn_green_light.TabIndex = 31;
+            this.btn_green_light.Text = "Send";
+            this.btn_green_light.UseVisualStyleBackColor = true;
+            this.btn_green_light.Click += new System.EventHandler(this.btn_green_light_Click);
+            // 
+            // txtTden2
+            // 
+            this.txtTden2.Location = new System.Drawing.Point(241, 112);
+            this.txtTden2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTden2.Multiline = true;
+            this.txtTden2.Name = "txtTden2";
+            this.txtTden2.Size = new System.Drawing.Size(128, 50);
+            this.txtTden2.TabIndex = 30;
+            // 
+            // txtTden1
+            // 
+            this.txtTden1.Location = new System.Drawing.Point(30, 112);
+            this.txtTden1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTden1.Multiline = true;
+            this.txtTden1.Name = "txtTden1";
+            this.txtTden1.Size = new System.Drawing.Size(128, 50);
+            this.txtTden1.TabIndex = 29;
             // 
             // selectedMode_0
             // 
@@ -548,105 +672,10 @@
             this.selectedMode_0.Text = "Selected";
             this.selectedMode_0.UseVisualStyleBackColor = true;
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(18, 179);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(39, 20);
-            this.label14.TabIndex = 6;
-            this.label14.Text = "Red";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(18, 82);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(54, 20);
-            this.label13.TabIndex = 5;
-            this.label13.Text = "Green";
-            // 
-            // txtTden1_red
-            // 
-            this.txtTden1_red.Location = new System.Drawing.Point(17, 201);
-            this.txtTden1_red.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTden1_red.Multiline = true;
-            this.txtTden1_red.Name = "txtTden1_red";
-            this.txtTden1_red.Size = new System.Drawing.Size(128, 50);
-            this.txtTden1_red.TabIndex = 4;
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.selectedMode_1);
-            this.groupBox8.Controls.Add(this.txtTden2_green);
-            this.groupBox8.Controls.Add(this.label15);
-            this.groupBox8.Controls.Add(this.txtTden2_red);
-            this.groupBox8.Controls.Add(this.btn_green_led2);
-            this.groupBox8.Controls.Add(this.label2);
-            this.groupBox8.Controls.Add(this.txtTden2);
-            this.groupBox8.Location = new System.Drawing.Point(253, 42);
-            this.groupBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox8.Size = new System.Drawing.Size(194, 381);
-            this.groupBox8.TabIndex = 26;
-            this.groupBox8.TabStop = false;
-            // 
-            // selectedMode_1
-            // 
-            this.selectedMode_1.AutoSize = true;
-            this.selectedMode_1.Enabled = false;
-            this.selectedMode_1.Location = new System.Drawing.Point(11, 0);
-            this.selectedMode_1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.selectedMode_1.Name = "selectedMode_1";
-            this.selectedMode_1.Size = new System.Drawing.Size(97, 24);
-            this.selectedMode_1.TabIndex = 28;
-            this.selectedMode_1.TabStop = true;
-            this.selectedMode_1.Text = "Selected";
-            this.selectedMode_1.UseVisualStyleBackColor = true;
-            // 
-            // txtTden2_green
-            // 
-            this.txtTden2_green.AutoSize = true;
-            this.txtTden2_green.Location = new System.Drawing.Point(12, 82);
-            this.txtTden2_green.Name = "txtTden2_green";
-            this.txtTden2_green.Size = new System.Drawing.Size(54, 20);
-            this.txtTden2_green.TabIndex = 9;
-            this.txtTden2_green.Text = "Green";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(12, 179);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(39, 20);
-            this.label15.TabIndex = 8;
-            this.label15.Text = "Red";
-            // 
-            // txtTden2_red
-            // 
-            this.txtTden2_red.Location = new System.Drawing.Point(11, 201);
-            this.txtTden2_red.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTden2_red.Multiline = true;
-            this.txtTden2_red.Name = "txtTden2_red";
-            this.txtTden2_red.Size = new System.Drawing.Size(128, 50);
-            this.txtTden2_red.TabIndex = 7;
-            // 
-            // btn_green_led2
-            // 
-            this.btn_green_led2.Location = new System.Drawing.Point(11, 306);
-            this.btn_green_led2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_green_led2.Name = "btn_green_led2";
-            this.btn_green_led2.Size = new System.Drawing.Size(128, 52);
-            this.btn_green_led2.TabIndex = 4;
-            this.btn_green_led2.Text = "Send";
-            this.btn_green_led2.UseVisualStyleBackColor = true;
-            this.btn_green_led2.Click += new System.EventHandler(this.btn_green_led2_Click);
-            // 
             // reset_Button
             // 
             this.reset_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reset_Button.Location = new System.Drawing.Point(417, 765);
+            this.reset_Button.Location = new System.Drawing.Point(415, 774);
             this.reset_Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.reset_Button.Name = "reset_Button";
             this.reset_Button.Size = new System.Drawing.Size(112, 52);
@@ -655,31 +684,56 @@
             this.reset_Button.UseVisualStyleBackColor = true;
             this.reset_Button.Click += new System.EventHandler(this.reset_Button_Click);
             // 
-            // textBox5
+            // label18
             // 
-            this.textBox5.Location = new System.Drawing.Point(151, 166);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(112, 40);
-            this.textBox5.TabIndex = 33;
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(205, 164);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(61, 20);
+            this.label18.TabIndex = 48;
+            this.label18.Text = "Minute:";
             // 
-            // label16
+            // label19
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(181, 134);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(43, 20);
-            this.label16.TabIndex = 28;
-            this.label16.Text = "Time";
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(57, 164);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(48, 20);
+            this.label19.TabIndex = 47;
+            this.label19.Text = "Hour:";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(57, 133);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(131, 22);
+            this.label20.TabIndex = 46;
+            this.label20.Text = "Input time stop:";
+            // 
+            // inputMinuteStop
+            // 
+            this.inputMinuteStop.Location = new System.Drawing.Point(266, 158);
+            this.inputMinuteStop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.inputMinuteStop.Name = "inputMinuteStop";
+            this.inputMinuteStop.Size = new System.Drawing.Size(68, 26);
+            this.inputMinuteStop.TabIndex = 45;
+            // 
+            // inputHourStop
+            // 
+            this.inputHourStop.Location = new System.Drawing.Point(105, 160);
+            this.inputHourStop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.inputHourStop.Name = "inputHourStop";
+            this.inputHourStop.Size = new System.Drawing.Size(65, 26);
+            this.inputHourStop.TabIndex = 44;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(950, 826);
+            this.ClientSize = new System.Drawing.Size(950, 837);
             this.Controls.Add(this.reset_Button);
-            this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox2);
@@ -702,8 +756,6 @@
             this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -735,32 +787,37 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btn_night_mode;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtTden1_green;
-        private System.Windows.Forms.TextBox txtTden2;
-        private System.Windows.Forms.Button btn_green_led1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.Button btn_green_led2;
-        private System.Windows.Forms.TextBox txtTden1_red;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label txtTden2_green;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtTden2_red;
         private System.Windows.Forms.TextBox name_led2_2;
         private System.Windows.Forms.TextBox name_led1_2;
         private System.Windows.Forms.TextBox name_led1_1;
         private System.Windows.Forms.TextBox name_led2_1;
         private System.Windows.Forms.RadioButton selectedMode_0;
-        private System.Windows.Forms.RadioButton selectedMode_2;
-        private System.Windows.Forms.RadioButton selectedMode_3;
         private System.Windows.Forms.RadioButton selectedMode_1;
-        private System.Windows.Forms.Button reset_Button;
+        private System.Windows.Forms.RadioButton selectedMode_2;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_green_light;
+        private System.Windows.Forms.TextBox txtTden2;
+        private System.Windows.Forms.TextBox txtTden1;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox inputMinute;
+        private System.Windows.Forms.TextBox inputHour;
+        private System.Windows.Forms.TextBox currentMinute;
+        private System.Windows.Forms.TextBox currentHour;
+        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button reset_Button;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox inputMinuteStop;
+        private System.Windows.Forms.TextBox inputHourStop;
     }
 }
 
