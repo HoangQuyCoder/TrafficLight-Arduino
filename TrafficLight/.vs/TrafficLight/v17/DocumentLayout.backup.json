@@ -1,17 +1,44 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\",
+  "WorkspaceRootPath": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|d:\\study\\hk5\\iot\\design\\den_giao_thong\\trafficlightcontroler\\trafficlight\\trafficlight\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\trafficlight\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|solutionrelative:trafficlight\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\trafficlight\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\trafficlight\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|solutionrelative:trafficlight\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\trafficlight\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|d:\\study\\hk5\\iot\\design\\den_giao_thong\\github_colap\\trafficlight-arduino\\trafficlight\\trafficlight\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|solutionrelative:trafficlight\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\trafficlight\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|solutionrelative:trafficlight\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\trafficlight\\database.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|solutionrelative:trafficlight\\database.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\trafficlight\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|solutionrelative:trafficlight\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\trafficlight\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|solutionrelative:trafficlight\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|TrafficLight||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\trafficlight\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|solutionrelative:trafficlight\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\trafficlight\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|solutionrelative:trafficlight\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,22 +49,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.cs",
-              "RelativeDocumentMoniker": "TrafficLight\\Form1.cs",
-              "ToolTip": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.cs",
-              "RelativeToolTip": "TrafficLight\\Form1.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAswHMAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T05:40:58.165Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -56,28 +69,123 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "TrafficLight\\Form1.Designer.cs",
-              "ToolTip": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.Designer.cs",
-              "RelativeToolTip": "TrafficLight\\Form1.Designer.cs",
-              "ViewState": "AgIAAMwBAAAAAAAAAAAswM4BAAAuAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\TrafficLight\\Login.cs",
+              "RelativeDocumentMoniker": "TrafficLight\\Login.cs",
+              "ToolTip": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\TrafficLight\\Login.cs",
+              "RelativeToolTip": "TrafficLight\\Login.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAYwD4AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T08:27:40.691Z",
+              "WhenOpened": "2024-11-11T09:13:29.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Database.Designer.cs",
+              "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\TrafficLight\\Database.Designer.cs",
+              "RelativeDocumentMoniker": "TrafficLight\\Database.Designer.cs",
+              "ToolTip": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\TrafficLight\\Database.Designer.cs",
+              "RelativeToolTip": "TrafficLight\\Database.Designer.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAqwCcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T07:31:57.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Database.cs",
+              "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\TrafficLight\\Database.cs",
+              "RelativeDocumentMoniker": "TrafficLight\\Database.cs",
+              "ToolTip": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\TrafficLight\\Database.cs",
+              "RelativeToolTip": "TrafficLight\\Database.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAADgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T07:13:56.563Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Database.cs [Design]",
+              "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\TrafficLight\\Database.cs",
+              "RelativeDocumentMoniker": "TrafficLight\\Database.cs",
+              "ToolTip": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\TrafficLight\\Database.cs [Design]",
+              "RelativeToolTip": "TrafficLight\\Database.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T07:10:08.594Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.cs",
+              "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\TrafficLight\\Form1.cs",
               "RelativeDocumentMoniker": "TrafficLight\\Form1.cs",
-              "ToolTip": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.cs [Design]",
+              "ToolTip": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\TrafficLight\\Form1.cs [Design]",
               "RelativeToolTip": "TrafficLight\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T05:40:47.919Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\TrafficLight\\Form1.cs",
+              "RelativeDocumentMoniker": "TrafficLight\\Form1.cs",
+              "ToolTip": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\TrafficLight\\Form1.cs",
+              "RelativeToolTip": "TrafficLight\\Form1.cs",
+              "ViewState": "AgIAABcBAAAAAAAAAAAswCwBAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T05:40:58.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\TrafficLight\\Program.cs",
+              "RelativeDocumentMoniker": "TrafficLight\\Program.cs",
+              "ToolTip": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\TrafficLight\\Program.cs",
+              "RelativeToolTip": "TrafficLight\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T09:26:41.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TrafficLight",
+              "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\TrafficLight\\TrafficLight.csproj",
+              "RelativeDocumentMoniker": "TrafficLight\\TrafficLight.csproj",
+              "ToolTip": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\TrafficLight\\TrafficLight.csproj",
+              "RelativeToolTip": "TrafficLight\\TrafficLight.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-11T09:22:40.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\TrafficLight\\Login.cs",
+              "RelativeDocumentMoniker": "TrafficLight\\Login.cs",
+              "ToolTip": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\TrafficLight\\Login.cs [Design]",
+              "RelativeToolTip": "TrafficLight\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T09:13:04.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\TrafficLight\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "TrafficLight\\Form1.Designer.cs",
+              "ToolTip": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\github_colap\\TrafficLight-Arduino\\TrafficLight\\TrafficLight\\Form1.Designer.cs",
+              "RelativeToolTip": "TrafficLight\\Form1.Designer.cs",
+              "ViewState": "AgIAAKoCAAAAAAAAAAAwwMECAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T08:27:40.691Z",
+              "EditorCaption": ""
             }
           ]
         }

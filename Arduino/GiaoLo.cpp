@@ -12,10 +12,7 @@ GiaoLo::GiaoLo(int pinSCLK, int pinRCLK, int pinDIO, Led7Seg ledOne, Led7Seg led
   this->_pinSCLK = pinSCLK;
   this->_pinRCLK = pinRCLK;
   this->_pinDIO = pinDIO;
-  add(ledOne, ledTwo, ledThree, ledFour);
-}
 
-void GiaoLo::add(Led7Seg ledOne, Led7Seg ledTwo, Led7Seg ledThree, Led7Seg ledFour){
   this->_ledOne = ledOne;
   this->_ledTwo = ledTwo;
   this->_ledThree = ledThree;

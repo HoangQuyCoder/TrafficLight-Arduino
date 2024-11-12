@@ -21,8 +21,15 @@ int targetMinute;
 int targetHourStop;
 int targetMinuteStop;
 
+byte mode;
+byte led;
+byte yellowOff;
+byte dateTimeFlag;
+
 bool stopMode = false;
 bool yellowFlashing = false;
+bool lightMode = true;
+bool flag = true;
 
 byte t = 0;
 byte t1, t2;
@@ -38,6 +45,10 @@ Led7Seg ledFour(24, 25, 26, 27, 28, 29, 30, 31);
 GiaoLo giaoLo(SCLK, RCLK, DIO, ledOne, ledTwo, ledThree, ledFour);
 TrafficLight trafficLightOne(x1, d1, v1);
 TrafficLight trafficLightTwo(x2, d2, v2);
+
+int currentHour;
+int currentMinute;
+bool check;
 
 void setup() {
   Serial.begin(9600);
@@ -65,24 +76,32 @@ void setup() {
 // Mode: 0.Light mode  1.Stop mode   2.Night mode
 void loop() {
   if (Serial.available() >= 3) {
-    byte mode = Serial.read();
+    mode = Serial.read();
 
     if (mode == 0) {
-      byte flag = Serial.read();
-      byte t_xanh = Serial.read();
-      byte t_do = Serial.read();
+      led = Serial.read();
+      yellowOff = Serial.read();
+      t_xanh = Serial.read();
+      t_do = Serial.read();
+      t_vang = Serial.read();
 
-      if (flag == 0) {
+      if (yellowOff == 1) {
+        t_vang = 0;
+      }
+
+      if (led == 1) {
         ledOne.setXanh(t_xanh);
         ledOne.setDo(t_do);
+        ledOne.setVang(t_vang);
         if (t_do <= 3) {
           ledOne.setVang(0);
         }
         ledTwo.calculator(ledOne);
 
-      } else if (flag == 1) {
+      } else if (led == 2) {
         ledTwo.setXanh(t_xanh);
         ledTwo.setDo(t_do);
+        ledTwo.setVang(t_vang);
         if (t_do <= 3) {
           ledTwo.setVang(0);
         }
@@ -91,6 +110,9 @@ void loop() {
 
       stopMode = false;
       yellowFlashing = false;
+      lightMode = true;
+      flag = false;
+
       resetTimers();
 
     } else if (mode == 1) {
@@ -99,6 +121,8 @@ void loop() {
 
       stopMode = true;
       yellowFlashing = false;
+      lightMode = false;
+      flag = false;
 
       giaoLo.turnOff7Segment();
       trafficLightOne.setColor(colorLed1);
@@ -110,12 +134,11 @@ void loop() {
       targetMinute = Serial.read();
       targetHourStop = Serial.read();
       targetMinuteStop = Serial.read();
+      dateTimeFlag = Serial.read();
 
       yellowFlashing = true;
       stopMode = false;
-
-      giaoLo.turnOff7Segment();
-      resetTimers();
+      flag = false;
     }
   }
 
@@ -123,20 +146,76 @@ void loop() {
     return;
   }
 
-  // Traffic light control logic based on current time `t`
+  // Get the current time
+  DateTime now = rtc.now();
+  currentHour = now.hour();
+  currentMinute = now.minute();
+
   if (yellowFlashing) {
-    trafficLightOne.toggleYellowLights(targetHour, targetMinute, rtc);
-    trafficLightTwo.toggleYellowLights(targetHour, targetMinute, rtc);
-    return;
+    sendCurrTime();
+
+    byte temp = currentHour;
+    byte temp2 = targetHourStop;
+    byte temp3 = targetMinute;
+
+    if (dateTimeFlag != 0) {
+      if (currentHour == 0) {
+        temp = currentHour + 24;
+      }
+      temp2 = targetHourStop + dateTimeFlag * 24;
+    }
+
+    if (temp >= targetHour && temp <= temp2 && currentMinute >= temp3) {
+      targetMinute = 0;
+      lightMode = false;
+
+      giaoLo.turnOff7Segment();
+      resetTimers();
+      trafficLightOne.toggleYellowLights();
+      trafficLightTwo.toggleYellowLights();
+      if (currentMinute == targetMinuteStop && temp == temp2) {
+        lightMode = true;
+        yellowFlashing = false;
+      }
+    } else {
+      lightMode = true;
+    }
   }
 
-  displayLight();
-  // Send t1, t2
+  if (lightMode) {
+    displayLight();
+    giaoLo.displayNumber(t1, t2);
+    sendTimeLight();
+  }
+
+  if (checkNightMode(currentHour) && flag) {
+    giaoLo.turnOff7Segment();
+    trafficLightOne.toggleYellowLights();
+    trafficLightTwo.toggleYellowLights();
+    lightMode = false;
+  } else {
+    lightMode = true;
+  }
+}
+
+bool checkNightMode(int currentHour) {
+  if ((22 <= currentHour && currentHour <= 23) || (0 <= currentHour && currentHour <= 5)) {
+    return true;
+  }
+  return false;
+}
+
+void sendCurrTime() {
+  Serial.print("Hour: ");
+  Serial.print(currentHour);
+  Serial.print("; Minute: ");
+  Serial.println(currentMinute);
+}
+
+void sendTimeLight() {
   Serial.print(t1);
   Serial.print(",");
   Serial.println(t2);
-
-  giaoLo.displayNumber(t1, t2);
 }
 
 void updateTimers() {

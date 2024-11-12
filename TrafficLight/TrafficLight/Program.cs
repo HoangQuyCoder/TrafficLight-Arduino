@@ -16,7 +16,8 @@ namespace TrafficLight
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Login login = new Login();
+            Application.Run(login);
         }
     }
 }
