@@ -7,7 +7,7 @@ class TrafficLight
 {
 public:
     TrafficLight(int pinXanh, int pinDo, int pinVang);
-    void toggleYellowLights(int targetHour, int targetMinute, RTC_DS1307& rtc);
+    void toggleYellowLights();
     void setColor(byte color);
 
 private:

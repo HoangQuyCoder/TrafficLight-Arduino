@@ -38,3 +38,31 @@ C:\Users\HOANG QUY\Downloads\TrafficLightControler\TrafficLight\TrafficLight\obj
 C:\Users\HOANG QUY\Downloads\TrafficLightControler\TrafficLight\TrafficLight\obj\Debug\TrafficLight.csproj.CoreCompileInputs.cache
 C:\Users\HOANG QUY\Downloads\TrafficLightControler\TrafficLight\TrafficLight\obj\Debug\TrafficLight.exe
 C:\Users\HOANG QUY\Downloads\TrafficLightControler\TrafficLight\TrafficLight\obj\Debug\TrafficLight.pdb
+D:\Study\HK5\Iot\Design\Den_giao_thong\github_colap\TrafficLight-Arduino\TrafficLight\TrafficLight\bin\Debug\TrafficLight.exe.config
+D:\Study\HK5\Iot\Design\Den_giao_thong\github_colap\TrafficLight-Arduino\TrafficLight\TrafficLight\bin\Debug\TrafficLight.exe
+D:\Study\HK5\Iot\Design\Den_giao_thong\github_colap\TrafficLight-Arduino\TrafficLight\TrafficLight\bin\Debug\TrafficLight.pdb
+D:\Study\HK5\Iot\Design\Den_giao_thong\github_colap\TrafficLight-Arduino\TrafficLight\TrafficLight\obj\Debug\TrafficLight.csproj.AssemblyReference.cache
+D:\Study\HK5\Iot\Design\Den_giao_thong\github_colap\TrafficLight-Arduino\TrafficLight\TrafficLight\obj\Debug\TrafficLight.Form1.resources
+D:\Study\HK5\Iot\Design\Den_giao_thong\github_colap\TrafficLight-Arduino\TrafficLight\TrafficLight\obj\Debug\TrafficLight.Properties.Resources.resources
+D:\Study\HK5\Iot\Design\Den_giao_thong\github_colap\TrafficLight-Arduino\TrafficLight\TrafficLight\obj\Debug\TrafficLight.csproj.GenerateResource.cache
+D:\Study\HK5\Iot\Design\Den_giao_thong\github_colap\TrafficLight-Arduino\TrafficLight\TrafficLight\obj\Debug\TrafficLight.csproj.CoreCompileInputs.cache
+D:\Study\HK5\Iot\Design\Den_giao_thong\github_colap\TrafficLight-Arduino\TrafficLight\TrafficLight\obj\Debug\TrafficLight.exe
+D:\Study\HK5\Iot\Design\Den_giao_thong\github_colap\TrafficLight-Arduino\TrafficLight\TrafficLight\obj\Debug\TrafficLight.pdb
+D:\Study\HK5\Iot\Design\Den_giao_thong\github_colap\TrafficLight-Arduino\TrafficLight\TrafficLight\obj\Debug\TrafficLight.Database.resources
+D:\Study\HK5\Iot\Design\Den_giao_thong\github_colap\TrafficLight-Arduino\TrafficLight\TrafficLight\obj\Debug\TrafficLight.Login.resources
+C:\Users\HOANG QUY\Downloads\TrafficLight\TrafficLight\obj\Debug\TrafficLight.csproj.AssemblyReference.cache
+C:\Users\HOANG QUY\Downloads\TrafficLight\TrafficLight\obj\Debug\TrafficLight.Database.resources
+C:\Users\HOANG QUY\Downloads\TrafficLight\TrafficLight\obj\Debug\TrafficLight.Form1.resources
+C:\Users\HOANG QUY\Downloads\TrafficLight\TrafficLight\obj\Debug\TrafficLight.Login.resources
+C:\Users\HOANG QUY\Downloads\TrafficLight\TrafficLight\obj\Debug\TrafficLight.Properties.Resources.resources
+C:\Users\HOANG QUY\Downloads\TrafficLight\TrafficLight\obj\Debug\TrafficLight.csproj.GenerateResource.cache
+C:\Users\HOANG QUY\Downloads\TrafficLight\TrafficLight\obj\Debug\TrafficLight.csproj.CoreCompileInputs.cache
+C:\Users\HOANG QUY\Downloads\TrafficLight\TrafficLight\obj\Debug\TrafficLight.exe
+C:\Users\HOANG QUY\Downloads\TrafficLight\TrafficLight\obj\Debug\TrafficLight.pdb
+C:\Users\HOANG QUY\Downloads\TrafficLight\TrafficLight\bin\Debug\TrafficLight.exe.config
+C:\Users\HOANG QUY\Downloads\TrafficLight\TrafficLight\bin\Debug\TrafficLight.exe
+C:\Users\HOANG QUY\Downloads\TrafficLight\TrafficLight\bin\Debug\TrafficLight.pdb
+C:\Users\HOANG QUY\Desktop\TrafficLightControler\TrafficLight\TrafficLight\obj\Debug\TrafficLight.Database.resources
+C:\Users\HOANG QUY\Desktop\TrafficLightControler\TrafficLight\TrafficLight\obj\Debug\TrafficLight.Login.resources
+D:\Study\HK5\Iot\Design\Den_giao_thong\TrafficLightControler\TrafficLight\TrafficLight\obj\Debug\TrafficLight.Database.resources
+D:\Study\HK5\Iot\Design\Den_giao_thong\TrafficLightControler\TrafficLight\TrafficLight\obj\Debug\TrafficLight.Login.resources

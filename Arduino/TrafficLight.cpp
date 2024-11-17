@@ -12,18 +12,7 @@ TrafficLight::TrafficLight(int pinXanh, int pinDo, int pinVang) {
   this->_pinVang = pinVang;
 }
 
-void TrafficLight::toggleYellowLights(int targetHour, int targetMinute, RTC_DS1307& rtc) {
-  DateTime now = rtc.now();  // Get the current time
-  int currentHour = now.hour();
-  int currentMinute = now.minute();
-  Serial.print("Hour: ");
-  Serial.print(currentHour);
-  Serial.print("; Minute: ");
-  Serial.println(currentMinute);
-
-
-  if (currentHour == targetHour && currentMinute == targetMinute) {
-
+void TrafficLight::toggleYellowLights() {
     digitalWrite(_pinVang, HIGH);  // Turn on yellow light
     digitalWrite(_pinXanh, LOW);
     digitalWrite(_pinDo, LOW);
@@ -33,7 +22,6 @@ void TrafficLight::toggleYellowLights(int targetHour, int targetMinute, RTC_DS13
     digitalWrite(_pinVang, LOW);  // Turn off yellow light
     digitalWrite(_pinXanh, LOW);
     digitalWrite(_pinDo, LOW);
-  }
 }
 
 void TrafficLight::setColor(byte color) {

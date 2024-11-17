@@ -9,7 +9,6 @@ public:
     GiaoLo(int pinSCLK, int pinRCLK, int pinDIO, Led7Seg ledOne, Led7Seg ledTwo, Led7Seg ledThree, Led7Seg ledFour);
     void displayNumber(int num1, int num2);
     void turnOff7Segment();
-    void add(Led7Seg ledOne, Led7Seg ledTwo, Led7Seg ledThree, Led7Seg ledFour);
 
 private:
     int _pinSCLK;

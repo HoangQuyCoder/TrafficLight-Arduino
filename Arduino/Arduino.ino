@@ -4,6 +4,10 @@
 #include "TrafficLight.h"
 #include <RTClib.h>
 
+#include <SoftwareSerial.h>
+
+// Define RX and TX pins for the HC-05
+SoftwareSerial BTSerial(0, 1);  // RX | TX
 #define x1 8
 #define v1 9
 #define d1 10
@@ -16,13 +20,21 @@
 #define DIO 3   // Data Input Pin
 
 RTC_DS1307 rtc;  // Create an RTC instance
-int targetHour;
-int targetMinute;
+int targetHourStart;
+int targetMinuteStart;
 int targetHourStop;
 int targetMinuteStop;
+int targetDayStop;
+int startDay;
+
+byte mode;
+byte led;
+byte yellowOff;
 
 bool stopMode = false;
 bool yellowFlashing = false;
+bool lightMode = true;
+bool flag = true;
 
 byte t = 0;
 byte t1, t2;
@@ -39,9 +51,13 @@ GiaoLo giaoLo(SCLK, RCLK, DIO, ledOne, ledTwo, ledThree, ledFour);
 TrafficLight trafficLightOne(x1, d1, v1);
 TrafficLight trafficLightTwo(x2, d2, v2);
 
+int currentHour;
+int currentMinute;
+int currentDay;
+
 void setup() {
   Serial.begin(9600);
-
+  BTSerial.begin(9600);
   ledOne.set(t_xanh, t_do, t_vang);
   ledThree.set(t_xanh, t_do, t_vang);
   ledTwo.calculator(ledOne);
@@ -64,25 +80,33 @@ void setup() {
 
 // Mode: 0.Light mode  1.Stop mode   2.Night mode
 void loop() {
-  if (Serial.available() >= 3) {
-    byte mode = Serial.read();
+  if (Serial.available() >= 6) {
+    mode = Serial.read();
 
     if (mode == 0) {
-      byte flag = Serial.read();
-      byte t_xanh = Serial.read();
-      byte t_do = Serial.read();
+      led = Serial.read();
+      yellowOff = Serial.read();
+      t_xanh = Serial.read();
+      t_do = Serial.read();
+      t_vang = Serial.read();
 
-      if (flag == 0) {
+      if (yellowOff == 1) {
+        t_vang = 0;
+      }
+
+      if (led == 1) {
         ledOne.setXanh(t_xanh);
         ledOne.setDo(t_do);
+        ledOne.setVang(t_vang);
         if (t_do <= 3) {
           ledOne.setVang(0);
         }
         ledTwo.calculator(ledOne);
 
-      } else if (flag == 1) {
+      } else if (led == 2) {
         ledTwo.setXanh(t_xanh);
         ledTwo.setDo(t_do);
+        ledTwo.setVang(t_vang);
         if (t_do <= 3) {
           ledTwo.setVang(0);
         }
@@ -91,14 +115,21 @@ void loop() {
 
       stopMode = false;
       yellowFlashing = false;
+      lightMode = true;
+      flag = false;
+
       resetTimers();
 
     } else if (mode == 1) {
       byte colorLed1 = Serial.read();
       byte colorLed2 = Serial.read();
-
+      for(int i =0 ;i<3;i++){
+        byte freeMemory = Serial.read();
+      }
       stopMode = true;
       yellowFlashing = false;
+      lightMode = false;
+      flag = false;
 
       giaoLo.turnOff7Segment();
       trafficLightOne.setColor(colorLed1);
@@ -106,16 +137,17 @@ void loop() {
       resetTimers();
 
     } else if (mode == 2) {
-      targetHour = Serial.read();
-      targetMinute = Serial.read();
+      targetHourStart = Serial.read();
+      targetMinuteStart = Serial.read();
       targetHourStop = Serial.read();
       targetMinuteStop = Serial.read();
+      startDay = Serial.read();
+      targetDayStop = Serial.read();
 
       yellowFlashing = true;
+      lightMode = false;
       stopMode = false;
-
-      giaoLo.turnOff7Segment();
-      resetTimers();
+      flag = false;
     }
   }
 
@@ -123,20 +155,74 @@ void loop() {
     return;
   }
 
-  // Traffic light control logic based on current time `t`
+  // Get the current time
+  DateTime now = rtc.now();
+  currentHour = now.hour();
+  currentMinute = now.minute();
+  currentDay = now.day();
+
   if (yellowFlashing) {
-    trafficLightOne.toggleYellowLights(targetHour, targetMinute, rtc);
-    trafficLightTwo.toggleYellowLights(targetHour, targetMinute, rtc);
-    return;
+    sendCurrTime();
+
+    // Giả sử currentDay là ngày hiện tại và targetDayStop là số ngày đến thời điểm dừng
+    int currentTotalMinutes = (currentDay * 1440) + (currentHour * 60) + currentMinute;
+    int targetStartTotalMinutes = (startDay * 1440) + (targetHourStart * 60) + targetMinuteStart;
+    int targetStopTotalMinutes = (targetDayStop * 1440) + (targetHourStop * 60) + targetMinuteStop;
+
+    // Kiểm tra nếu đang trong khoảng thời gian bật đèn vàng
+    if (currentTotalMinutes >= targetStartTotalMinutes && currentTotalMinutes <= targetStopTotalMinutes) {
+      lightMode = false;
+      giaoLo.turnOff7Segment();
+      trafficLightOne.toggleYellowLights();
+      trafficLightTwo.toggleYellowLights();
+
+      // Dừng chế độ nhấp nháy khi đạt thời gian dừng
+      if (currentTotalMinutes == targetStopTotalMinutes) {
+        lightMode = true;
+        yellowFlashing = false;
+        resetTimers();
+
+        return;
+      }
+    } else {
+      lightMode = true;
+    }
   }
 
-  displayLight();
-  // Send t1, t2
+  if (lightMode) {
+    displayLight();
+    giaoLo.displayNumber(t1, t2);
+    sendTimeLight();
+  }
+
+  if (checkNightMode(currentHour) && flag) {
+    giaoLo.turnOff7Segment();
+    trafficLightOne.toggleYellowLights();
+    trafficLightTwo.toggleYellowLights();
+    lightMode = false;
+  } else {
+    lightMode = true;
+  }
+}
+
+bool checkNightMode(int currentHour) {
+  if ((22 <= currentHour && currentHour <= 23) || (0 <= currentHour && currentHour <= 5)) {
+    return true;
+  }
+  return false;
+}
+
+void sendCurrTime() {
+  Serial.print("Hour: ");
+  Serial.print(currentHour);
+  Serial.print("; Minute: ");
+  Serial.println(currentMinute);
+}
+
+void sendTimeLight() {
   Serial.print(t1);
   Serial.print(",");
   Serial.println(t2);
-
-  giaoLo.displayNumber(t1, t2);
 }
 
 void updateTimers() {
