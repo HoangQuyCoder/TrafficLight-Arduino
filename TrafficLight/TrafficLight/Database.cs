@@ -8,7 +8,11 @@ namespace TrafficLight
 {
     public partial class Database : Form
     {
+<<<<<<< HEAD
         private string connectionString = "Server=MSI\\MYDATABASE;Database=TRAFFIC_LIGHT;Integrated Security=True;";
+=======
+        private string connectionString = "Server=THEODORE;Database=TRAFFIC_LIGHT;Integrated Security=True;";
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
 
         public Database()
         {

@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using static TrafficLight.Login;
 
 
+
 namespace TrafficLight
 {
     public partial class Form1 : Form
@@ -16,6 +17,10 @@ namespace TrafficLight
         byte colorLed1 = 0;
         byte dateTimeFlag = 0;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
         public Form1(string comPort)
         {
             InitializeComponent();
@@ -170,10 +175,19 @@ namespace TrafficLight
                 DateTime date1 = dateTimePicker1.Value.Date;
                 DateTime date2 = dateTimePicker2.Value.Date;
 
+<<<<<<< HEAD
                 byte startDay = (byte)date1.Day;
                 byte stopDay = (byte)date2.Day;
 
                 byte[] data = new byte[] { mode, targetHour, targetMinute, targetHourStop, targetMinuteStop, startDay, stopDay };
+=======
+                if (date2.Date > date1.Date)
+                {
+                    dateTimeFlag = (byte)Math.Abs((date2 - date1).Days);
+                }
+
+                byte[] data = new byte[] { mode, targetHour, targetMinute, targetHourStop, targetMinuteStop, dateTimeFlag };
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
 
                 // Gửi dữ liệu qua cổng nối tiếp
                 _serialPort.Write(data, 0, data.Length);
@@ -211,11 +225,15 @@ namespace TrafficLight
                 {
                     if (targetHourStop >= 0 && targetHourStop <= 23 && targetMinuteStop >= 0 && targetMinuteStop <= 59)
                     {
+<<<<<<< HEAD
                         if (targetHourStop >= targetHour)
                         {
                             return true;
                         }
                         else if (targetHour == targetHourStop && targetMinuteStop > targetMinute)
+=======
+                        if (targetHourStop >= targetHour && targetMinuteStop > targetMinute)
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
                         {
                             return true;
                         }
@@ -231,18 +249,28 @@ namespace TrafficLight
             {
                 byte tDen1 = byte.Parse(txtTden1.Text);
                 byte tDen2 = byte.Parse(txtTden2.Text);
+                byte tDen3 = byte.Parse(textBox5.Text);
                 byte mode = 0;
 
                 if (!checkBox1.Checked)
                 {
                     yellowLedOff = 0;
+<<<<<<< HEAD
+=======
+                    //MessageBox.Show("Checkbox đang ở trạng thái unchecked.");
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
                 }
                 else
                 {
                     yellowLedOff = 1;
+<<<<<<< HEAD
                     textBox5.Text = "0";
                 }
                 byte tDen3 = byte.Parse(textBox5.Text);
+=======
+                    //MessageBox.Show("Checkbox đang được chọn.");
+                }
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
 
                 byte[] data = new byte[] { mode, led, yellowLedOff, tDen1, tDen2, tDen3 };
                 _serialPort.Write(data, 0, data.Length);
@@ -253,11 +281,19 @@ namespace TrafficLight
 
                 if (led == 1)
                 {
+<<<<<<< HEAD
                     indexDatabase("Normal", tDen1, tDen2, tDen3, tDen2, tDen1 + tDen3, tDen1 + tDen3 - tDen1);
                 }
                 else
                 {
                     indexDatabase("Normal", tDen2, tDen1 + tDen3, tDen1 + tDen3 - tDen1, tDen1, tDen2, tDen3);
+=======
+                    indexDatabase("Normal", tDen1, tDen3, tDen2, tDen2 - tDen3, tDen3, tDen1 + tDen3);
+                }
+                else
+                {
+                    indexDatabase("Normal", tDen2 - tDen3, tDen3, tDen1 + tDen3, tDen1, tDen3, tDen2);
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
                 }
 
                 MessageBox.Show("Timing values sent successfully.");
@@ -329,7 +365,11 @@ namespace TrafficLight
             }
         }
 
+<<<<<<< HEAD
         private void indexDatabase(string mode, int timeOfGreen1,int timeOfRed1,  int timeOfYellow1, int timeOfGreen2, int timeOfRed2, int timeOfYellow2)
+=======
+        private void indexDatabase(string mode, int timeOfGreen1, int timeOfYellow1, int timeOfRed1, int timeOfGreen2, int timeOfYellow2, int timeOfRed2)
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
         {
             if (mode == "Stop")
             {
@@ -365,7 +405,12 @@ namespace TrafficLight
                 }
             }
 
+<<<<<<< HEAD
             SaveToDatabase(mode, DateTime.Now, timeOfGreen1, timeOfRed1, timeOfYellow1, timeOfGreen2, timeOfRed2, timeOfYellow2);
+=======
+
+            SaveToDatabase(mode, DateTime.Now, timeOfRreen1, timeOfRed1, timeOfYellow1, timeOfRreen2, timeOfRed2, timeOfYellow2);
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
         }
 
         private void button_history_Click(object sender, EventArgs e)
@@ -380,6 +425,7 @@ namespace TrafficLight
         {
             try
             {
+<<<<<<< HEAD
                 string connectionString = "Server=MSI\\MYDATABASE;Database=TRAFFIC_LIGHT;Integrated Security=True;";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
@@ -389,6 +435,15 @@ namespace TrafficLight
                     SqlCommand command = new SqlCommand(query, connection);
                     string currentUser = UserSession.Username;
                     command.Parameters.AddWithValue("@UserName", currentUser);
+=======
+                string connectionString = "Server=THEODORE;Database=TRAFFIC_LIGHT;Integrated Security=True;";
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string query = "INSERT INTO UserModeHistory (UserName, ModeNumber, ModeStartTime, GreenLightDuration1, YellowLightDuration1, RedLightDuration1, GreenLightDuration2, YellowLightDuration2, RedLightDuration2) " +
+                        "           VALUES (null, @ModeNumber, @ModeStartTime, @GreenLightDuration1, @YellowLightDuration1, @RedLightDuration1, @GreenLightDuration2, @YellowLightDuration2, @RedLightDuration2)";
+                    SqlCommand command = new SqlCommand(query, connection);
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
                     command.Parameters.AddWithValue("@ModeNumber", mode);
                     command.Parameters.AddWithValue("@ModeStartTime", timestamp);
                     command.Parameters.AddWithValue("@GreenLightDuration1", timeOfGreen1);

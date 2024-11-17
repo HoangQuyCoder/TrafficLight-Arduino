@@ -62,7 +62,10 @@
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(113, 22);
             this.textBoxPassword.TabIndex = 2;
+<<<<<<< HEAD
             this.textBoxPassword.UseSystemPasswordChar = true;
+=======
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
             // 
             // label2
             // 

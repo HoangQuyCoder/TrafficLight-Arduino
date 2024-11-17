@@ -41,7 +41,11 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.label22.Location = new System.Drawing.Point(728, 18);
+=======
+            this.label22.Location = new System.Drawing.Point(829, 18);
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(79, 25);
             this.label22.TabIndex = 0;
@@ -55,7 +59,11 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 55;
             this.dataGridView1.RowTemplate.Height = 24;
+<<<<<<< HEAD
             this.dataGridView1.Size = new System.Drawing.Size(1621, 556);
+=======
+            this.dataGridView1.Size = new System.Drawing.Size(1631, 556);
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
             this.dataGridView1.TabIndex = 3;
             // 
             // groupBox8
@@ -65,7 +73,11 @@
             this.groupBox8.Controls.Add(this.label22);
             this.groupBox8.Location = new System.Drawing.Point(12, 12);
             this.groupBox8.Name = "groupBox8";
+<<<<<<< HEAD
             this.groupBox8.Size = new System.Drawing.Size(1634, 645);
+=======
+            this.groupBox8.Size = new System.Drawing.Size(1649, 645);
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
             this.groupBox8.TabIndex = 35;
             this.groupBox8.TabStop = false;
             // 
@@ -83,7 +95,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1656, 669);
+=======
+            this.ClientSize = new System.Drawing.Size(1699, 669);
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
             this.Controls.Add(this.groupBox8);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Database";

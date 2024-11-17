@@ -20,6 +20,7 @@ namespace TrafficLight
             LoadComboBox();
         }
 
+<<<<<<< HEAD
         public static class UserSession
         {
             public static string Username { get; set; } = string.Empty;
@@ -27,6 +28,9 @@ namespace TrafficLight
 
 
         private string connectionString = "Server=MSI\\MYDATABASE;Database=TRAFFIC_LIGHT;Integrated Security=True;";
+=======
+        private string connectionString = "Server=THEODORE;Database=TRAFFIC_LIGHT;Integrated Security=True;";
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
 
         private bool AuthenticateUser(string username, string password, out string role)
         {
@@ -66,8 +70,11 @@ namespace TrafficLight
             {
                 MessageBox.Show("Login successful!");
 
+<<<<<<< HEAD
                 UserSession.Username = textBoxName.Text;
 
+=======
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
                 string selectedCOMPort = comboBox1.SelectedItem?.ToString() ?? "COM1";
 
                 Form1 mainForm = new Form1(selectedCOMPort);

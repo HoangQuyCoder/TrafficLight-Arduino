@@ -31,6 +31,11 @@ byte mode;
 byte led;
 byte yellowOff;
 
+byte mode;
+byte led;
+byte yellowOff;
+byte dateTimeFlag;
+
 bool stopMode = false;
 bool yellowFlashing = false;
 bool lightMode = true;
@@ -53,7 +58,11 @@ TrafficLight trafficLightTwo(x2, d2, v2);
 
 int currentHour;
 int currentMinute;
+<<<<<<< HEAD
 int currentDay;
+=======
+bool check;
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
 
 void setup() {
   Serial.begin(9600);
@@ -80,7 +89,11 @@ void setup() {
 
 // Mode: 0.Light mode  1.Stop mode   2.Night mode
 void loop() {
+<<<<<<< HEAD
   if (Serial.available() >= 6) {
+=======
+  if (Serial.available() >= 3) {
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
     mode = Serial.read();
 
     if (mode == 0) {
@@ -141,8 +154,12 @@ void loop() {
       targetMinuteStart = Serial.read();
       targetHourStop = Serial.read();
       targetMinuteStop = Serial.read();
+<<<<<<< HEAD
       startDay = Serial.read();
       targetDayStop = Serial.read();
+=======
+      dateTimeFlag = Serial.read();
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
 
       yellowFlashing = true;
       lightMode = false;
@@ -159,11 +176,15 @@ void loop() {
   DateTime now = rtc.now();
   currentHour = now.hour();
   currentMinute = now.minute();
+<<<<<<< HEAD
   currentDay = now.day();
+=======
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
 
   if (yellowFlashing) {
     sendCurrTime();
 
+<<<<<<< HEAD
     // Giả sử currentDay là ngày hiện tại và targetDayStop là số ngày đến thời điểm dừng
     int currentTotalMinutes = (currentDay * 1440) + (currentHour * 60) + currentMinute;
     int targetStartTotalMinutes = (startDay * 1440) + (targetHourStart * 60) + targetMinuteStart;
@@ -183,6 +204,30 @@ void loop() {
         resetTimers();
 
         return;
+=======
+    byte temp = currentHour;
+    byte temp2 = targetHourStop;
+    byte temp3 = targetMinute;
+
+    if (dateTimeFlag != 0) {
+      if (currentHour == 0) {
+        temp = currentHour + 24;
+      }
+      temp2 = targetHourStop + dateTimeFlag * 24;
+    }
+
+    if (temp >= targetHour && temp <= temp2 && currentMinute >= temp3) {
+      targetMinute = 0;
+      lightMode = false;
+
+      giaoLo.turnOff7Segment();
+      resetTimers();
+      trafficLightOne.toggleYellowLights();
+      trafficLightTwo.toggleYellowLights();
+      if (currentMinute == targetMinuteStop && temp == temp2) {
+        lightMode = true;
+        yellowFlashing = false;
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
       }
     } else {
       lightMode = true;

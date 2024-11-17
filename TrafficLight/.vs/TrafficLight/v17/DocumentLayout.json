@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\trafficlight\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|solutionrelative:trafficlight\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -43,6 +44,48 @@
       "RelativeMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|solutionrelative:trafficlight\\database.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+=======
+      "AbsoluteMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\trafficlight\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|solutionrelative:trafficlight\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|c:\\users\\hoang quy\\desktop\\trafficlightcontroler\\trafficlight\\trafficlight\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|solutionrelative:trafficlight\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\trafficlight\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|solutionrelative:trafficlight\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\trafficlight\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|solutionrelative:trafficlight\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\trafficlight\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|solutionrelative:trafficlight\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\trafficlight\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|solutionrelative:trafficlight\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\trafficlight\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|solutionrelative:trafficlight\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\trafficlight\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|solutionrelative:trafficlight\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\trafficlight\\database.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|solutionrelative:trafficlight\\database.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\trafficlight\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8235F72C-E513-4F6A-9C29-8150545C99D7}|TrafficLight\\TrafficLight.csproj|solutionrelative:trafficlight\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|TrafficLight||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
@@ -53,7 +96,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 5,
+=======
+          "SelectedChildIndex": 9,
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
           "Children": [
             {
               "$type": "Document",
@@ -69,6 +116,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 6,
               "Title": "Login.cs",
               "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\Login.cs",
@@ -82,6 +130,45 @@
             },
             {
               "$type": "Document",
+=======
+              "DocumentIndex": 4,
+              "Title": "Login.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Login.Designer.cs",
+              "RelativeDocumentMoniker": "TrafficLight\\Login.Designer.cs",
+              "ToolTip": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Login.Designer.cs",
+              "RelativeToolTip": "TrafficLight\\Login.Designer.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAiwF8AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T13:38:40.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Program.cs",
+              "RelativeDocumentMoniker": "TrafficLight\\Program.cs",
+              "ToolTip": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Program.cs",
+              "RelativeToolTip": "TrafficLight\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T09:26:41.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Login.cs",
+              "RelativeDocumentMoniker": "TrafficLight\\Login.cs",
+              "ToolTip": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Login.cs",
+              "RelativeToolTip": "TrafficLight\\Login.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAmwEEAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T09:13:29.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
               "DocumentIndex": 5,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.cs",
@@ -94,19 +181,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "TrafficLight\\Form1.Designer.cs",
               "ToolTip": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.Designer.cs",
               "RelativeToolTip": "TrafficLight\\Form1.Designer.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAEICAAAAAAAAAAAAwFQCAAAaAAAAAAAAAA==",
+=======
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T08:27:40.691Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.cs",
@@ -114,12 +206,22 @@
               "ToolTip": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.cs",
               "RelativeToolTip": "TrafficLight\\Form1.cs",
               "ViewState": "AgIAAOYAAAAAAAAAAAAAAPAAAAARAAAAAAAAAA==",
+=======
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.cs",
+              "RelativeDocumentMoniker": "TrafficLight\\Form1.cs",
+              "ToolTip": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Form1.cs",
+              "RelativeToolTip": "TrafficLight\\Form1.cs",
+              "ViewState": "AQIAAMEAAAAAAAAAAAAAwM4AAABOAAAA",
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T05:40:58.165Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\Login.cs",
@@ -139,22 +241,63 @@
               "ToolTip": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\Database.cs",
               "RelativeToolTip": "TrafficLight\\Database.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABBAAAAAAAAAA==",
+=======
+              "DocumentIndex": 3,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Login.cs",
+              "RelativeDocumentMoniker": "TrafficLight\\Login.cs",
+              "ToolTip": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Login.cs [Design]",
+              "RelativeToolTip": "TrafficLight\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T09:13:04.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Database.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Database.cs",
+              "RelativeDocumentMoniker": "TrafficLight\\Database.cs",
+              "ToolTip": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Database.cs",
+              "RelativeToolTip": "TrafficLight\\Database.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAoAAAA6AAAA",
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-11T07:13:56.563Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
               "Title": "Database.cs [Design]",
               "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\Database.cs",
               "RelativeDocumentMoniker": "TrafficLight\\Database.cs",
               "ToolTip": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\Database.cs [Design]",
+=======
+              "DocumentIndex": 8,
+              "Title": "Database.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Database.Designer.cs",
+              "RelativeDocumentMoniker": "TrafficLight\\Database.Designer.cs",
+              "ToolTip": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Database.Designer.cs",
+              "RelativeToolTip": "TrafficLight\\Database.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T07:31:57.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Database.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Database.cs",
+              "RelativeDocumentMoniker": "TrafficLight\\Database.cs",
+              "ToolTip": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\Database.cs [Design]",
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
               "RelativeToolTip": "TrafficLight\\Database.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-11T07:10:08.594Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 8,
               "Title": "Login.Designer.cs",
               "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\Login.Designer.cs",
@@ -185,6 +328,13 @@
               "DocumentMoniker": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\TrafficLight.csproj",
               "RelativeDocumentMoniker": "TrafficLight\\TrafficLight.csproj",
               "ToolTip": "D:\\Study\\HK5\\Iot\\Design\\Den_giao_thong\\TrafficLightControler\\TrafficLight\\TrafficLight\\TrafficLight.csproj",
+=======
+              "DocumentIndex": 10,
+              "Title": "TrafficLight",
+              "DocumentMoniker": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\TrafficLight.csproj",
+              "RelativeDocumentMoniker": "TrafficLight\\TrafficLight.csproj",
+              "ToolTip": "C:\\Users\\HOANG QUY\\Desktop\\TrafficLightControler\\TrafficLight\\TrafficLight\\TrafficLight.csproj",
+>>>>>>> 3a541463f93918d4cbcbeb34dba05c1466f343bc
               "RelativeToolTip": "TrafficLight\\TrafficLight.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-11-11T09:22:40.913Z"
