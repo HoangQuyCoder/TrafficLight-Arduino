@@ -1,1 +1,2 @@
 "# TrafficLight-Arduino" 
+Mô phỏng hệ thống đèn giao thông tại giao lộ. Hệ thống cho phép điều chỉnh tín hiệu đèn, thời gian sáng, chế độ ban đêm, chế độ đèn vàng nhấp nháy, hỗ trợ windown form dễ dàng thao tác sử dụng. Có thể sử dụng Proteus mô phỏng hệ thống giao lộ, complie code arduino và truyền vào proteus để sử dụng. Code được triển khai dưới dạng hướng đối tượng, dễ dàng triển với các tính năng với, khả năng trừu tượng, kế thừa, đa hình, đóng gói.
